@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(136, 126, 52);
+}
+
+.bar {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: rgb(219, 215, 181);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(92, 91, 81);
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
